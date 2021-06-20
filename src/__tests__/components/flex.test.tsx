@@ -6,15 +6,8 @@ it("renders correctly", () => {
   const { asFragment } = renderWithTheme(<Flex>flex</Flex>);
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
-      .c0 {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-    }
-
-    <div
-        class="c0"
+      <div
+        class="sc-bdfBwQ sc-gsTCUz iwJkGQ ckYhbt"
       >
         flex
       </div>
