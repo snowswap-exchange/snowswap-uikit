@@ -63,11 +63,9 @@ function __makeTemplateObject(cooked, raw) {
     return cooked;
 }
 
-var getThemeValue = function (path, fallback) {
-    return function (theme) {
-        return get(theme, path, fallback);
-    };
-};
+var getThemeValue = function (path, fallback) { return function (theme) {
+    return get(theme, path, fallback);
+}; };
 
 var rotate = keyframes(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
 var spinStyle = css(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  animation: ", " 2s linear infinite;\n"], ["\n  animation: ", " 2s linear infinite;\n"])), rotate);
@@ -546,12 +544,58 @@ var Icon$A = function (props) {
 };
 
 var Icon$B = function (props) {
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M5.84199 5.00181C5.35647 2.40193 7.35138 0 9.9962 0C12.3302 0 14.2222 1.89206 14.2222 4.22603V9.43607C14.806 9.39487 15.3992 9.37374 16 9.37374C16.5772 9.37374 17.1474 9.39324 17.709 9.43131V4.22603C17.709 1.89206 19.601 0 21.935 0C24.5798 0 26.5747 2.40193 26.0892 5.00181L24.9456 11.1259C28.8705 12.8395 31.8384 15.8157 31.8384 19.5556V21.8182C31.8384 24.8936 29.8038 27.4686 26.9594 29.2068C24.0928 30.9586 20.2149 32 16 32C11.7851 32 7.90719 30.9586 5.04062 29.2068C2.19624 27.4686 0.161621 24.8936 0.161621 21.8182V19.5556C0.161621 15.8355 3.09899 12.8708 6.99084 11.1538L5.84199 5.00181ZM23.48 11.9305L24.8183 4.76446C25.1552 2.96 23.7707 1.29293 21.935 1.29293C20.3151 1.29293 19.0019 2.60612 19.0019 4.22603V10.8562C18.5774 10.8018 18.1462 10.7586 17.709 10.7274C17.1484 10.6873 16.5782 10.6667 16 10.6667C15.3982 10.6667 14.8049 10.689 14.2222 10.7324C13.785 10.765 13.3537 10.8094 12.9293 10.8651V4.22603C12.9293 2.60612 11.6161 1.29293 9.9962 1.29293C8.16055 1.29293 6.77597 2.96 7.11295 4.76446L8.45562 11.9543C4.25822 13.5135 1.45455 16.3344 1.45455 19.5556V21.8182C1.45455 26.7274 7.96677 30.7071 16 30.7071C24.0332 30.7071 30.5455 26.7274 30.5455 21.8182V19.5556C30.5455 16.318 27.7131 13.4847 23.48 11.9305Z", fill: "#633001" }),
-        React.createElement("path", { d: "M30.5455 21.8183C30.5455 26.7275 24.0333 30.7072 16 30.7072C7.96681 30.7072 1.45459 26.7275 1.45459 21.8183V19.5557H30.5455V21.8183Z", fill: "#FEDC90" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M7.11298 4.7645C6.77601 2.96004 8.16058 1.29297 9.99624 1.29297C11.6161 1.29297 12.9293 2.60616 12.9293 4.22607V10.8652C13.9192 10.7351 14.9466 10.6667 16 10.6667C17.0291 10.6667 18.0333 10.732 19.0019 10.8562V4.22607C19.0019 2.60616 20.3151 1.29297 21.935 1.29297C23.7707 1.29297 25.1553 2.96004 24.8183 4.7645L23.4801 11.9306C27.7131 13.4847 30.5455 16.318 30.5455 19.5556C30.5455 24.4648 24.0333 28.4445 16 28.4445C7.96681 28.4445 1.45459 24.4648 1.45459 19.5556C1.45459 16.3345 4.25826 13.5135 8.45566 11.9543L7.11298 4.7645Z", fill: "#D1884F" }),
-        React.createElement("path", { className: "left-eye", d: "M11.9595 18.9091C11.9595 20.248 11.2359 21.3333 10.3433 21.3333C9.45075 21.3333 8.72717 20.248 8.72717 18.9091C8.72717 17.5702 9.45075 16.4849 10.3433 16.4849C11.2359 16.4849 11.9595 17.5702 11.9595 18.9091Z", fill: "#633001" }),
-        React.createElement("path", { className: "right-eye", d: "M23.1111 18.9091C23.1111 20.248 22.3875 21.3333 21.4949 21.3333C20.6024 21.3333 19.8788 20.248 19.8788 18.9091C19.8788 17.5702 20.6024 16.4849 21.4949 16.4849C22.3875 16.4849 23.1111 17.5702 23.1111 18.9091Z", fill: "#633001" })));
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 732 732" }, props),
+        React.createElement("defs", null,
+            React.createElement("style", null, ".cls-mobile-1{fill:url(#gradient_mobile_36);}.cls-mobile-2{fill:url(#gradient_mobile_36-2);}.cls-mobile-3{fill:url(#gradient_mobile_36-3);}.cls-mobile-4{fill:url(#gradient_mobile_36-5);}.cls-mobile-5{fill:url(#gradient_mobile_36-6);}.cls-mobile-6{fill:url(#gradient_mobile_36-7);}.cls-mobile-7{fill:url(#gradient_mobile_36-9);}.cls-mobile-8{fill:url(#gradient_mobile_36-10);}.cls-mobile-9{fill:url(#gradient_mobile_36-11);}.cls-mobile-10{fill:url(#gradient_mobile_36-13);}.cls-mobile-11{fill:url(#gradient_mobile_36-14);}.cls-mobile-12{fill:url(#gradient_mobile_36-16);}.cls-mobile-13{fill:url(#gradient_mobile_36-17);}.cls-mobile-14{fill:url(#gradient_mobile_36-20);}.cls-mobile-15{fill:url(#gradient_mobile_114);}.cls-mobile-16{fill:url(#linear-gradient);}.cls-mobile-17{fill:url(#gradient_mobile_63);}"),
+            React.createElement("linearGradient", { id: "gradient_mobile_36", x1: "119.33", y1: "-9.9", x2: "119.33", y2: "733.09", gradientUnits: "userSpaceOnUse" },
+                React.createElement("stop", { offset: "0", stopColor: "#00a5e7" }),
+                React.createElement("stop", { offset: "1", stopColor: "#0053cb" })),
+            React.createElement("linearGradient", { id: "gradient_mobile_36-2", x1: "98.34", y1: "-9.9", x2: "98.34", y2: "733.09", xlinkHref: "#gradient_mobile_36" }),
+            React.createElement("linearGradient", { id: "gradient_mobile_36-3", x1: "633.74", y1: "-9.9", x2: "633.74", y2: "733.09", xlinkHref: "#gradient_mobile_36" }),
+            React.createElement("linearGradient", { id: "gradient_mobile_36-5", x1: "366.05", y1: "-9.9", x2: "366.05", y2: "733.09", xlinkHref: "#gradient_mobile_36" }),
+            React.createElement("linearGradient", { id: "gradient_mobile_36-6", x1: "366.05", y1: "-9.9", x2: "366.05", y2: "733.09", xlinkHref: "#gradient_mobile_36" }),
+            React.createElement("linearGradient", { id: "gradient_mobile_36-7", x1: "91.73", y1: "-9.9", x2: "91.73", y2: "733.09", xlinkHref: "#gradient_mobile_36" }),
+            React.createElement("linearGradient", { id: "gradient_mobile_36-9", x1: "366.04", y1: "-9.9", x2: "366.04", y2: "733.09", xlinkHref: "#gradient_mobile_36" }),
+            React.createElement("linearGradient", { id: "gradient_mobile_36-10", x1: "284.44", y1: "-9.9", x2: "284.44", y2: "733.09", xlinkHref: "#gradient_mobile_36" }),
+            React.createElement("linearGradient", { id: "gradient_mobile_36-11", x1: "202.83", y1: "-9.9", x2: "202.83", y2: "733.09", xlinkHref: "#gradient_mobile_36" }),
+            React.createElement("linearGradient", { id: "gradient_mobile_36-13", x1: "447.66", y1: "-9.9", x2: "447.66", y2: "733.09", xlinkHref: "#gradient_mobile_36" }),
+            React.createElement("linearGradient", { id: "gradient_mobile_36-14", x1: "529.27", y1: "-9.9", x2: "529.27", y2: "733.09", xlinkHref: "#gradient_mobile_36" }),
+            React.createElement("linearGradient", { id: "gradient_mobile_36-16", x1: "366.05", y1: "-9.9", x2: "366.05", y2: "733.09", xlinkHref: "#gradient_mobile_36" }),
+            React.createElement("linearGradient", { id: "gradient_mobile_36-17", x1: "192.91", y1: "-9.9", x2: "192.91", y2: "733.09", xlinkHref: "#gradient_mobile_36" }),
+            React.createElement("linearGradient", { id: "gradient_mobile_36-20", x1: "539.19", y1: "-9.9", x2: "539.19", y2: "733.09", xlinkHref: "#gradient_mobile_36" }),
+            React.createElement("linearGradient", { id: "gradient_mobile_114", x1: "62.02", y1: "371.99", x2: "679.12", y2: "359.91", gradientUnits: "userSpaceOnUse" },
+                React.createElement("stop", { offset: "0", stopColor: "#00ace7" }),
+                React.createElement("stop", { offset: "1", stopColor: "#0083e8" })),
+            React.createElement("linearGradient", { id: "linear-gradient", x1: "735", y1: "364.52", x2: "-0.38", y2: "367.54", xlinkHref: "#gradient_mobile_36" }),
+            React.createElement("linearGradient", { id: "gradient_mobile_63", x1: "60.78", y1: "366.03", x2: "673.23", y2: "366.03", gradientUnits: "userSpaceOnUse" },
+                React.createElement("stop", { offset: "0", stopColor: "#fff" }),
+                React.createElement("stop", { offset: "1", stopColor: "#008cff" }))),
+        React.createElement("g", { id: "Layer_2", "data-name": "Layer 2" },
+            React.createElement("g", { id: "Layer_1-2", "data-name": "Layer 1" },
+                React.createElement("path", { className: "cls-mobile-1", d: "M123.17,172.3q-5,6.21-9.6,12.68l11.51,20.73Z" }),
+                React.createElement("path", { className: "cls-mobile-2", d: "M101.17,213.11l-2.75-5c-1,1.67-2,3.36-2.91,5Z" }),
+                React.createElement("path", { className: "cls-mobile-3", d: "M633.67,523.9c1-1.66,1.94-3.35,2.89-5l-5.63.1Z" }),
+                React.createElement("path", { className: "cls-mobile-3", d: "M630.93,213.11l5.63.09c-.95-1.68-1.91-3.36-2.89-5Z" }),
+                React.createElement("path", { className: "cls-mobile-4", d: "M363.17,55.37l2.88,4.81,2.89-4.81c-1,0-1.93-.07-2.9-.07S364.13,55.36,363.17,55.37Z" }),
+                React.createElement("path", { className: "cls-mobile-5", d: "M368.93,676.7l-2.88-4.8-2.88,4.8c1,0,1.9.08,2.87.08S368,676.71,368.93,676.7Z" }),
+                React.createElement("path", { className: "cls-mobile-6", d: "M83,237.92q-3.28,7.25-6.2,14.69l30-15.09Z" }),
+                React.createElement("path", { className: "cls-mobile-2", d: "M101.17,519l-5.66-.1c1,1.69,1.92,3.38,2.91,5Z" }),
+                React.createElement("path", { className: "cls-mobile-7", d: "M403.25,387.51A42.93,42.93,0,1,0,366,409,43,43,0,0,0,403.25,387.51ZM382,375.26A18.41,18.41,0,0,1,356.83,382a18.45,18.45,0,0,1-6.76-25.2,18.47,18.47,0,0,1,25.21-6.75,18.47,18.47,0,0,1,6.74,25.2Z" }),
+                React.createElement("path", { className: "cls-mobile-8", d: "M336.69,194.52,234.16,137.61l-2,117.25,102.52,56.91Zm-25.78,76-54-30,1-61.72,54,30Z" }),
+                React.createElement("path", { className: "cls-mobile-9", d: "M102.28,366l100.56,60.33L303.39,366,202.84,305.71ZM202.84,397.8,149.9,366l52.94-31.76L255.77,366Z" }),
+                React.createElement("path", { className: "cls-mobile-8", d: "M232.91,476.82l-.71.4,2,117.25L336,538l.71-.4-2-117.24ZM258,553.23l-1-61.73,54-30,1,61.73Z" }),
+                React.createElement("path", { className: "cls-mobile-10", d: "M395.43,536.73l0,.82,102.53,56.92L499.89,478l0-.81L397.38,420.31Zm25.76-75.19,54,30-1,61.73-54-30Z" }),
+                React.createElement("path", { className: "cls-mobile-11", d: "M629.82,366,529.27,305.71,428.71,366l100.56,60.33ZM529.27,334.28,582.2,366,529.27,397.8,476.33,366Z" }),
+                React.createElement("path", { className: "cls-mobile-10", d: "M499.19,255.25l.72-.39-2-117.25L396.13,194.13l-.72.39,2,117.25Zm-25.06-76.4,1,61.72-54,30-1-61.72Z" }),
+                React.createElement("path", { className: "cls-mobile-12", d: "M353.8,149.22,250.22,81.27l-13.44,20.49,117,76.76V310.75h24.5V178.52l117-76.76L481.88,81.27l-103.58,68V110.49l68.07-44.65a307.84,307.84,0,0,0-33.88-7.07L384.42,77.18l12.22-20.37c-9.12-.89-18.37-1.35-27.7-1.44l-2.89,4.81-2.88-4.81q-14,.12-27.71,1.44l12.22,20.37L319.61,58.76a310.85,310.85,0,0,0-33.89,7.07L353.8,110.5Z" }),
+                React.createElement("path", { className: "cls-mobile-13", d: "M172.16,268.24,61.52,324l11,21.88,125-63L312.05,349l12.25-21.21L209.78,261.67l-8-139.72-24.46,1.39L184.41,247l-33.54-19.36-4.64-81.27a313.4,313.4,0,0,0-23.06,25.91l1.91,33.41L113.57,185q-8.07,11.22-15.15,23.17l2.75,5-5.66.09q-6.81,12-12.56,24.72l23.76-.4-30,15.09a308.19,308.19,0,0,0-10.86,32.9l72.73-36.64Z" }),
+                React.createElement("path", { className: "cls-mobile-13", d: "M184.41,485.06l-7.06,123.67,24.46,1.4,8-139.72L324.3,404.29l-12.25-21.22L197.53,449.19l-125-63-11,21.87,110.63,55.74L138.62,483.2,65.9,446.57a305.91,305.91,0,0,0,10.85,32.9l30,15.09L83,494.16q5.75,12.68,12.55,24.71l5.66.1-2.75,4.95q7.06,12,15.15,23.18l11.51-20.73-1.91,33.41a314.9,314.9,0,0,0,23.06,25.9l4.64-81.26Z" }),
+                React.createElement("path", { className: "cls-mobile-12", d: "M378.3,582.85l102.45,67.21,1.13.74,13.44-20.48-117-76.76V421.32H353.8V553.56l-115.88,76-1.14.75,13.44,20.48L353.8,582.85v38.73l-68.08,44.66a310.85,310.85,0,0,0,33.89,7.07l28.07-18.41-12.22,20.36q13.68,1.34,27.71,1.44l2.88-4.8,2.88,4.8q14-.12,27.71-1.44L384.42,654.9l28.07,18.41a308.35,308.35,0,0,0,33.88-7.08L378.3,621.59Z" }),
+                React.createElement("path", { className: "cls-mobile-14", d: "M630.93,519l5.63-.1q6.81-12,12.56-24.71l-23.73.4,29.92-15.07a308.93,308.93,0,0,0,10.86-32.9L593.49,483.2,560,463.84l109.41-55.12,1.22-.62-11-21.87-125,63L420.05,383.07,407.8,404.29l114.52,66.12,7.89,138.36.08,1.36,24.46-1.4-7.06-123.68,33.54,19.37,4.64,81.23a313.4,313.4,0,0,0,23.06-25.91L607,526.37l11.5,20.7q8.06-11.22,15.15-23.17Z" }),
+                React.createElement("path", { className: "cls-mobile-14", d: "M547.69,247l7-122.33.08-1.36L530.29,122l-8,139.73L407.8,327.79,420.05,349l114.52-66.11,123.78,62.35,1.21.61,11-21.88L559.94,268.24l33.55-19.37,72.68,36.62a310.41,310.41,0,0,0-10.85-32.9L625.4,237.52l23.72.4q-5.75-12.67-12.56-24.72l-5.63-.09,2.74-4.93q-7.06-12-15.15-23.18L607,205.71l1.91-33.37a313.54,313.54,0,0,0-23.06-25.92l-4.64,81.24Z" }),
+                React.createElement("path", { className: "cls-mobile-15", d: "M366.05,681.44C192.14,681.44,50.64,540,50.64,366S192.14,50.63,366.05,50.63,681.46,192.12,681.46,366,540,681.44,366.05,681.44Zm0-604.45C206.67,77,77,206.66,77,366s129.67,289,289.05,289S655.1,525.42,655.1,366,525.43,77,366.05,77Z" }),
+                React.createElement("path", { className: "cls-mobile-16", d: "M366,732.08C164.2,732.08,0,567.87,0,366S164.2,0,366,0s366,164.2,366,366S567.87,732.08,366,732.08Zm0-670.34C198.25,61.74,61.74,198.25,61.74,366S198.25,670.33,366,670.33,670.33,533.82,670.33,366,533.82,61.74,366,61.74Z" }),
+                React.createElement("path", { className: "cls-mobile-17", d: "M673.23,366A306.06,306.06,0,0,1,84.52,483.85a306.73,306.73,0,0,1,66.91-335.32A306.09,306.09,0,0,1,673.23,366Zm0,0a304.27,304.27,0,0,0-89.52-214.78A301.75,301.75,0,1,0,673.23,366Z" })))));
 };
 
 var Icon$C = function (props) {
@@ -1806,12 +1850,10 @@ var scaleKeyValues = {
         butterSmearTwoRight: "5px",
     },
 };
-var getScale$1 = function (property) {
-    return function (_a) {
-        var _b = _a.scale, scale = _b === void 0 ? scales$4.MD : _b;
-        return scaleKeyValues[scale][property];
-    };
-};
+var getScale$1 = function (property) { return function (_a) {
+    var _b = _a.scale, scale = _b === void 0 ? scales$4.MD : _b;
+    return scaleKeyValues[scale][property];
+}; };
 var PancakeStack = styled.div(templateObject_1$x || (templateObject_1$x = __makeTemplateObject(["\n  position: relative;\n  display: inline-block;\n\n  &:label:before {\n    content: none;\n  }\n\n  .pancakes {\n    transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);\n  }\n\n  .pancake {\n    background: #e27c31;\n    border-radius: 50%;\n    width: ", ";\n    height: ", ";\n    position: absolute;\n    transition: 0.4s ease;\n    top: 2px;\n    left: 4px;\n    box-shadow: 0 ", " 0 ", " #fbbe7c;\n  }\n\n  .pancake:nth-child(1) {\n    background: ", ";\n    box-shadow: 0 ", " 0 ", "\n      ", ";\n  }\n\n  .pancake:nth-child(2) {\n    left: 0;\n    top: ", ";\n    transform: scale(0);\n    transition: 0.2s ease 0.2s;\n  }\n\n  .pancake:nth-child(3) {\n    top: ", ";\n    transform: scale(0);\n    transition: 0.2s ease 0.2s;\n  }\n\n  .pancake:nth-child(3):before,\n  .pancake:nth-child(3):after {\n    content: \"\";\n    position: absolute;\n    background: #ef8927;\n    border-radius: 20px;\n    width: 50%;\n    height: 20%;\n  }\n\n  .pancake:nth-child(3):before {\n    top: ", ";\n    left: ", ";\n  }\n\n  .pancake:nth-child(3):after {\n    top: ", ";\n    right: ", ";\n  }\n\n  .butter {\n    width: ", ";\n    height: ", ";\n    background: #fbdb60;\n    top: ", ";\n    left: ", ";\n    position: absolute;\n    border-radius: ", ";\n    box-shadow: 0 ", " 0 ", " #d67823;\n    transform: scale(0);\n    transition: 0.2s ease;\n  }\n"], ["\n  position: relative;\n  display: inline-block;\n\n  &:label:before {\n    content: none;\n  }\n\n  .pancakes {\n    transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);\n  }\n\n  .pancake {\n    background: #e27c31;\n    border-radius: 50%;\n    width: ", ";\n    height: ", ";\n    position: absolute;\n    transition: 0.4s ease;\n    top: 2px;\n    left: 4px;\n    box-shadow: 0 ", " 0 ", " #fbbe7c;\n  }\n\n  .pancake:nth-child(1) {\n    background: ", ";\n    box-shadow: 0 ", " 0 ", "\n      ", ";\n  }\n\n  .pancake:nth-child(2) {\n    left: 0;\n    top: ", ";\n    transform: scale(0);\n    transition: 0.2s ease 0.2s;\n  }\n\n  .pancake:nth-child(3) {\n    top: ", ";\n    transform: scale(0);\n    transition: 0.2s ease 0.2s;\n  }\n\n  .pancake:nth-child(3):before,\n  .pancake:nth-child(3):after {\n    content: \"\";\n    position: absolute;\n    background: #ef8927;\n    border-radius: 20px;\n    width: 50%;\n    height: 20%;\n  }\n\n  .pancake:nth-child(3):before {\n    top: ", ";\n    left: ", ";\n  }\n\n  .pancake:nth-child(3):after {\n    top: ", ";\n    right: ", ";\n  }\n\n  .butter {\n    width: ", ";\n    height: ", ";\n    background: #fbdb60;\n    top: ", ";\n    left: ", ";\n    position: absolute;\n    border-radius: ", ";\n    box-shadow: 0 ", " 0 ", " #d67823;\n    transform: scale(0);\n    transition: 0.2s ease;\n  }\n"])), getScale$1("pancakeSize"), getScale$1("pancakeSize"), getScale$1("pancakeThickness"), getScale$1("pancakeThickness"), function (_a) {
     var theme = _a.theme;
     return theme.pancakeToggle.handleBackground;
@@ -2183,32 +2225,28 @@ var Step = function (_a) {
 };
 var templateObject_1$F, templateObject_2$e, templateObject_3$6, templateObject_4$4, templateObject_5$3, templateObject_6$1, templateObject_7$1;
 
-var byTextAscending = function (getTextProperty) {
-    return function (objectA, objectB) {
-        var upperA = getTextProperty(objectA).toUpperCase();
-        var upperB = getTextProperty(objectB).toUpperCase();
-        if (upperA < upperB) {
-            return -1;
-        }
-        if (upperA > upperB) {
-            return 1;
-        }
-        return 0;
-    };
-};
-var byTextDescending = function (getTextProperty) {
-    return function (objectA, objectB) {
-        var upperA = getTextProperty(objectA).toUpperCase();
-        var upperB = getTextProperty(objectB).toUpperCase();
-        if (upperA > upperB) {
-            return -1;
-        }
-        if (upperA < upperB) {
-            return 1;
-        }
-        return 0;
-    };
-};
+var byTextAscending = function (getTextProperty) { return function (objectA, objectB) {
+    var upperA = getTextProperty(objectA).toUpperCase();
+    var upperB = getTextProperty(objectB).toUpperCase();
+    if (upperA < upperB) {
+        return -1;
+    }
+    if (upperA > upperB) {
+        return 1;
+    }
+    return 0;
+}; };
+var byTextDescending = function (getTextProperty) { return function (objectA, objectB) {
+    var upperA = getTextProperty(objectA).toUpperCase();
+    var upperB = getTextProperty(objectB).toUpperCase();
+    if (upperA > upperB) {
+        return -1;
+    }
+    if (upperA < upperB) {
+        return 1;
+    }
+    return 0;
+}; };
 
 var sortByColumn = function (data, sortColumn, columns) {
     var isAscending = null;
@@ -2250,153 +2288,151 @@ var getColumnsByName = function (columns) {
     });
     return columnsByName;
 };
-var createReducer = function () {
-    return function (state, action) {
-        var rows = [];
-        var nextPage = 0;
-        var prevPage = 0;
-        var isAscending = null;
-        var sortedRows = [];
-        var columnCopy = [];
-        var filteredRows = [];
-        var selectedRowsById = {};
-        var stateCopy = __assign({}, state);
-        var rowIds = {};
-        switch (action.type) {
-            case "SET_ROWS":
-                rows = __spreadArrays(action.data);
-                // preserve sorting if a sort is already enabled when data changes
-                if (state.sortColumn) {
-                    rows = sortByColumn(action.data, state.sortColumn, state.columns);
-                }
-                if (state.paginationEnabled === true) {
-                    rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
-                }
-                if (state.paginationEnabled === true) {
-                    rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
-                }
-                columnCopy = state.columns.map(function (column) {
-                    if (state.sortColumn === column.name) {
-                        return __assign(__assign({}, column), { sorted: {
-                                on: true,
-                                asc: column.sorted.asc,
-                            } });
-                    }
-                    return column;
-                });
-                return __assign(__assign({}, state), { rows: rows, originalRows: action.data, columns: columnCopy });
-            case "NEXT_PAGE":
-                nextPage = state.pagination.page + 1;
-                return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, nextPage), pagination: __assign(__assign({}, state.pagination), { page: nextPage, canNext: nextPage * state.pagination.perPage < state.originalRows.length, canPrev: nextPage !== 1 }) });
-            case "PREV_PAGE":
-                prevPage = state.pagination.page === 1 ? 1 : state.pagination.page - 1;
-                return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, prevPage), pagination: __assign(__assign({}, state.pagination), { page: prevPage, canNext: prevPage * state.pagination.perPage < state.originalRows.length, canPrev: prevPage !== 1 }) });
-            case "TOGGLE_SORT":
-                if (!(action.columnName in state.columnsByName)) {
-                    throw new Error("Invalid column, " + action.columnName + " not found");
-                }
-                // loop through all columns and set the sort parameter to off unless
-                // it's the specified column (only one column at a time for )
-                columnCopy = state.columns.map(function (column) {
-                    // if the row was found
-                    if (action.columnName === column.name) {
-                        if (action.isAscOverride !== undefined) {
-                            // force the sort order
-                            isAscending = action.isAscOverride;
-                        }
-                        else {
-                            // if it's undefined, start by setting to ascending, otherwise toggle
-                            isAscending = column.sorted.asc === undefined ? true : !column.sorted.asc;
-                        }
-                        if (column.sort) {
-                            sortedRows = isAscending ? state.rows.sort(column.sort) : state.rows.sort(column.sort).reverse();
-                            // default to sort by string
-                        }
-                        else {
-                            sortedRows = isAscending
-                                ? state.rows.sort(byTextAscending(function (object) { return object.original[action.columnName]; }))
-                                : state.rows.sort(byTextDescending(function (object) { return object.original[action.columnName]; }));
-                        }
-                        return __assign(__assign({}, column), { sorted: {
-                                on: true,
-                                asc: isAscending,
-                            } });
-                    }
-                    // set sorting to false for all other columns
+var createReducer = function () { return function (state, action) {
+    var rows = [];
+    var nextPage = 0;
+    var prevPage = 0;
+    var isAscending = null;
+    var sortedRows = [];
+    var columnCopy = [];
+    var filteredRows = [];
+    var selectedRowsById = {};
+    var stateCopy = __assign({}, state);
+    var rowIds = {};
+    switch (action.type) {
+        case "SET_ROWS":
+            rows = __spreadArrays(action.data);
+            // preserve sorting if a sort is already enabled when data changes
+            if (state.sortColumn) {
+                rows = sortByColumn(action.data, state.sortColumn, state.columns);
+            }
+            if (state.paginationEnabled === true) {
+                rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
+            }
+            if (state.paginationEnabled === true) {
+                rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
+            }
+            columnCopy = state.columns.map(function (column) {
+                if (state.sortColumn === column.name) {
                     return __assign(__assign({}, column), { sorted: {
-                            on: false,
-                            asc: false,
+                            on: true,
+                            asc: column.sorted.asc,
                         } });
-                });
-                return __assign(__assign({}, state), { columns: columnCopy, rows: sortedRows, sortColumn: action.columnName, columnsByName: getColumnsByName(columnCopy) });
-            case "GLOBAL_FILTER":
-                filteredRows = action.filter(state.originalRows);
-                selectedRowsById = {};
-                state.selectedRows.forEach(function (row) {
-                    var _a;
-                    selectedRowsById[row.id] = (_a = row.selected) !== null && _a !== void 0 ? _a : false;
-                });
-                return __assign(__assign({}, state), { rows: filteredRows.map(function (row) {
-                        return selectedRowsById[row.id] ? __assign(__assign({}, row), { selected: selectedRowsById[row.id] }) : __assign({}, row);
-                    }), filterOn: true });
-            case "SELECT_ROW":
-                stateCopy = __assign({}, state);
+                }
+                return column;
+            });
+            return __assign(__assign({}, state), { rows: rows, originalRows: action.data, columns: columnCopy });
+        case "NEXT_PAGE":
+            nextPage = state.pagination.page + 1;
+            return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, nextPage), pagination: __assign(__assign({}, state.pagination), { page: nextPage, canNext: nextPage * state.pagination.perPage < state.originalRows.length, canPrev: nextPage !== 1 }) });
+        case "PREV_PAGE":
+            prevPage = state.pagination.page === 1 ? 1 : state.pagination.page - 1;
+            return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, prevPage), pagination: __assign(__assign({}, state.pagination), { page: prevPage, canNext: prevPage * state.pagination.perPage < state.originalRows.length, canPrev: prevPage !== 1 }) });
+        case "TOGGLE_SORT":
+            if (!(action.columnName in state.columnsByName)) {
+                throw new Error("Invalid column, " + action.columnName + " not found");
+            }
+            // loop through all columns and set the sort parameter to off unless
+            // it's the specified column (only one column at a time for )
+            columnCopy = state.columns.map(function (column) {
+                // if the row was found
+                if (action.columnName === column.name) {
+                    if (action.isAscOverride !== undefined) {
+                        // force the sort order
+                        isAscending = action.isAscOverride;
+                    }
+                    else {
+                        // if it's undefined, start by setting to ascending, otherwise toggle
+                        isAscending = column.sorted.asc === undefined ? true : !column.sorted.asc;
+                    }
+                    if (column.sort) {
+                        sortedRows = isAscending ? state.rows.sort(column.sort) : state.rows.sort(column.sort).reverse();
+                        // default to sort by string
+                    }
+                    else {
+                        sortedRows = isAscending
+                            ? state.rows.sort(byTextAscending(function (object) { return object.original[action.columnName]; }))
+                            : state.rows.sort(byTextDescending(function (object) { return object.original[action.columnName]; }));
+                    }
+                    return __assign(__assign({}, column), { sorted: {
+                            on: true,
+                            asc: isAscending,
+                        } });
+                }
+                // set sorting to false for all other columns
+                return __assign(__assign({}, column), { sorted: {
+                        on: false,
+                        asc: false,
+                    } });
+            });
+            return __assign(__assign({}, state), { columns: columnCopy, rows: sortedRows, sortColumn: action.columnName, columnsByName: getColumnsByName(columnCopy) });
+        case "GLOBAL_FILTER":
+            filteredRows = action.filter(state.originalRows);
+            selectedRowsById = {};
+            state.selectedRows.forEach(function (row) {
+                var _a;
+                selectedRowsById[row.id] = (_a = row.selected) !== null && _a !== void 0 ? _a : false;
+            });
+            return __assign(__assign({}, state), { rows: filteredRows.map(function (row) {
+                    return selectedRowsById[row.id] ? __assign(__assign({}, row), { selected: selectedRowsById[row.id] }) : __assign({}, row);
+                }), filterOn: true });
+        case "SELECT_ROW":
+            stateCopy = __assign({}, state);
+            stateCopy.rows = stateCopy.rows.map(function (row) {
+                var newRow = __assign({}, row);
+                if (newRow.id === action.rowId) {
+                    newRow.selected = !newRow.selected;
+                }
+                return newRow;
+            });
+            stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
+                var newRow = __assign({}, row);
+                if (newRow.id === action.rowId) {
+                    newRow.selected = !newRow.selected;
+                }
+                return newRow;
+            });
+            stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected === true; });
+            stateCopy.toggleAllState =
+                stateCopy.selectedRows.length === stateCopy.rows.length
+                    ? (stateCopy.toggleAllState = true)
+                    : (stateCopy.toggleAllState = false);
+            return stateCopy;
+        case "SEARCH_STRING":
+            stateCopy = __assign({}, state);
+            stateCopy.rows = stateCopy.originalRows.filter(function (row) {
+                return (row.cells.filter(function (cell) {
+                    if (cell.value.includes(action.searchString)) {
+                        return true;
+                    }
+                    return false;
+                }).length > 0);
+            });
+            return stateCopy;
+        case "TOGGLE_ALL":
+            if (state.selectedRows.length < state.rows.length) {
                 stateCopy.rows = stateCopy.rows.map(function (row) {
-                    var newRow = __assign({}, row);
-                    if (newRow.id === action.rowId) {
-                        newRow.selected = !newRow.selected;
-                    }
-                    return newRow;
+                    rowIds[row.id] = true;
+                    return __assign(__assign({}, row), { selected: true });
                 });
-                stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
-                    var newRow = __assign({}, row);
-                    if (newRow.id === action.rowId) {
-                        newRow.selected = !newRow.selected;
-                    }
-                    return newRow;
+                stateCopy.toggleAllState = true;
+            }
+            else {
+                stateCopy.rows = stateCopy.rows.map(function (row) {
+                    rowIds[row.id] = false;
+                    return __assign(__assign({}, row), { selected: false });
                 });
-                stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected === true; });
-                stateCopy.toggleAllState =
-                    stateCopy.selectedRows.length === stateCopy.rows.length
-                        ? (stateCopy.toggleAllState = true)
-                        : (stateCopy.toggleAllState = false);
-                return stateCopy;
-            case "SEARCH_STRING":
-                stateCopy = __assign({}, state);
-                stateCopy.rows = stateCopy.originalRows.filter(function (row) {
-                    return (row.cells.filter(function (cell) {
-                        if (cell.value.includes(action.searchString)) {
-                            return true;
-                        }
-                        return false;
-                    }).length > 0);
-                });
-                return stateCopy;
-            case "TOGGLE_ALL":
-                if (state.selectedRows.length < state.rows.length) {
-                    stateCopy.rows = stateCopy.rows.map(function (row) {
-                        rowIds[row.id] = true;
-                        return __assign(__assign({}, row), { selected: true });
-                    });
-                    stateCopy.toggleAllState = true;
-                }
-                else {
-                    stateCopy.rows = stateCopy.rows.map(function (row) {
-                        rowIds[row.id] = false;
-                        return __assign(__assign({}, row), { selected: false });
-                    });
-                    stateCopy.toggleAllState = false;
-                }
-                stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
-                    return row.id in rowIds ? __assign(__assign({}, row), { selected: rowIds[row.id] }) : __assign({}, row);
-                });
-                stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected; });
-                return stateCopy;
-            default:
-                throw new Error("Invalid reducer action");
-        }
-    };
-};
+                stateCopy.toggleAllState = false;
+            }
+            stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
+                return row.id in rowIds ? __assign(__assign({}, row), { selected: rowIds[row.id] }) : __assign({}, row);
+            });
+            stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected; });
+            return stateCopy;
+        default:
+            throw new Error("Invalid reducer action");
+    }
+}; };
 var sortDataInOrder = function (data, columns) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return data.map(function (row) {
@@ -2664,12 +2700,10 @@ var scaleKeyValues$1 = {
         toggleWidth: "72px",
     },
 };
-var getScale$3 = function (property) {
-    return function (_a) {
-        var _b = _a.scale, scale = _b === void 0 ? scales$2.MD : _b;
-        return scaleKeyValues$1[scale][property];
-    };
-};
+var getScale$3 = function (property) { return function (_a) {
+    var _b = _a.scale, scale = _b === void 0 ? scales$2.MD : _b;
+    return scaleKeyValues$1[scale][property];
+}; };
 var Handle = styled.div(templateObject_1$J || (templateObject_1$J = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: ", ";\n  left: ", ";\n  position: absolute;\n  top: ", ";\n  transition: left 200ms ease-in;\n  width: ", ";\n  z-index: 1;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: ", ";\n  left: ", ";\n  position: absolute;\n  top: ", ";\n  transition: left 200ms ease-in;\n  width: ", ";\n  z-index: 1;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.toggle.handleBackground;
@@ -3404,27 +3438,125 @@ var Icon$1m = function (props) {
 };
 
 var Logo = function (_a) {
-    var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
-    var textColor = isDark ? "#FFFFFF" : "#000000";
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 160 26" }, props),
-        React.createElement("path", { d: "M30.8524 19.7569C30.4803 19.7569 30.2173 19.6799 30.0633 19.5259C29.9221 19.372 29.8516 19.1282 29.8516 18.7946V7.65066C29.8516 7.31705 29.9285 7.07326 30.0825 6.91928C30.2365 6.75248 30.4931 6.66907 30.8524 6.66907H35.5679C37.3642 6.66907 38.6858 7.04759 39.5327 7.80463C40.3796 8.56167 40.803 9.69082 40.803 11.1921C40.803 12.6805 40.3796 13.8032 39.5327 14.5603C38.6987 15.3045 37.3771 15.6766 35.5679 15.6766H33.7394V18.7946C33.7394 19.1282 33.6624 19.372 33.5085 19.5259C33.3545 19.6799 33.0914 19.7569 32.7193 19.7569H30.8524ZM35.2599 12.8858C35.786 12.8858 36.1902 12.7446 36.4725 12.4624C36.7676 12.1801 36.9151 11.7566 36.9151 11.1921C36.9151 10.6147 36.7676 10.1848 36.4725 9.90253C36.1902 9.62025 35.786 9.47911 35.2599 9.47911H33.7394V12.8858H35.2599Z", fill: textColor }),
-        React.createElement("path", { d: "M45.3484 20.0456C44.1423 20.0456 43.1735 19.6607 42.4421 18.8908C41.7236 18.1081 41.3643 17.011 41.3643 15.5996C41.3643 14.5218 41.6081 13.5787 42.0957 12.7703C42.5961 11.9619 43.2954 11.3396 44.1936 10.9034C45.1046 10.4543 46.1503 10.2297 47.3308 10.2297C48.306 10.2297 49.1657 10.3388 49.9099 10.5569C50.6669 10.7622 51.3598 11.0638 51.9885 11.4615V19.1602C51.9885 19.404 51.9436 19.5644 51.8538 19.6414C51.764 19.7184 51.5844 19.7569 51.3149 19.7569H49.3517C49.2106 19.7569 49.1015 19.7376 49.0245 19.6992C48.9475 19.6478 48.8834 19.5708 48.8321 19.4682L48.5819 18.8908C48.2097 19.2886 47.7607 19.5773 47.2346 19.7569C46.7213 19.9494 46.0926 20.0456 45.3484 20.0456ZM46.7919 17.428C47.2923 17.428 47.6837 17.3061 47.966 17.0623C48.2482 16.8186 48.3894 16.4721 48.3894 16.023V13.0205C48.1456 12.905 47.8376 12.8473 47.4655 12.8473C46.7855 12.8473 46.2402 13.0847 45.8296 13.5594C45.4318 14.0342 45.2329 14.7014 45.2329 15.5611C45.2329 16.8057 45.7526 17.428 46.7919 17.428Z", fill: textColor }),
-        React.createElement("path", { d: "M54.667 19.7569C54.2949 19.7569 54.0319 19.6799 53.8779 19.5259C53.7239 19.372 53.6469 19.1282 53.6469 18.7946V11.1151C53.6469 10.8841 53.6854 10.7301 53.7624 10.6532C53.8522 10.5633 54.0318 10.5184 54.3013 10.5184H56.2837C56.4377 10.5184 56.5532 10.5441 56.6302 10.5954C56.72 10.6339 56.7713 10.7109 56.7841 10.8264L56.8804 11.4038C57.2397 11.0445 57.708 10.7622 58.2854 10.5569C58.8756 10.3388 59.53 10.2297 60.2486 10.2297C61.2879 10.2297 62.1283 10.5248 62.7699 11.1151C63.4115 11.6925 63.7322 12.5522 63.7322 13.6942V18.7946C63.7322 19.1282 63.6552 19.372 63.5013 19.5259C63.3601 19.6799 63.1035 19.7569 62.7314 19.7569H60.8645C60.4924 19.7569 60.2229 19.6799 60.0561 19.5259C59.9021 19.372 59.8251 19.1282 59.8251 18.7946V13.9444C59.8251 13.5594 59.7417 13.2836 59.5749 13.1167C59.4081 12.9499 59.1451 12.8665 58.7858 12.8665C58.4009 12.8665 58.0929 12.9692 57.862 13.1745C57.6438 13.3798 57.5348 13.6621 57.5348 14.0213V18.7946C57.5348 19.1282 57.4578 19.372 57.3038 19.5259C57.1627 19.6799 56.906 19.7569 56.5339 19.7569H54.667Z", fill: textColor }),
-        React.createElement("path", { d: "M70.5354 20.0456C68.739 20.0456 67.3532 19.6286 66.3781 18.7946C65.4029 17.9605 64.9153 16.748 64.9153 15.1569C64.9153 14.1817 65.1399 13.322 65.5889 12.5778C66.038 11.8336 66.686 11.2562 67.5329 10.8456C68.3926 10.435 69.4062 10.2297 70.5739 10.2297C71.4592 10.2297 72.2034 10.3131 72.8065 10.4799C73.4224 10.6467 73.9677 10.9034 74.4425 11.2498C74.5836 11.3396 74.6542 11.4551 74.6542 11.5963C74.6542 11.6989 74.6029 11.8336 74.5002 12.0004L73.7111 13.367C73.6213 13.5466 73.5122 13.6364 73.3839 13.6364C73.3069 13.6364 73.185 13.5851 73.0182 13.4824C72.6718 13.2643 72.3446 13.1039 72.0366 13.0013C71.7415 12.8986 71.3694 12.8473 70.9203 12.8473C70.2787 12.8473 69.7591 13.0526 69.3613 13.4632C68.9764 13.8738 68.7839 14.4384 68.7839 15.1569C68.7839 15.8883 68.9828 16.4529 69.3806 16.8506C69.7783 17.2356 70.3237 17.428 71.0165 17.428C71.4271 17.428 71.7992 17.3703 72.1329 17.2548C72.4665 17.1393 72.8065 16.9789 73.1529 16.7736C73.3326 16.671 73.4609 16.6197 73.5379 16.6197C73.6534 16.6197 73.756 16.7095 73.8458 16.8891L74.7119 18.3711C74.7761 18.4994 74.8082 18.6021 74.8082 18.6791C74.8082 18.7946 74.7312 18.9036 74.5772 19.0063C74.0383 19.3527 73.4481 19.6093 72.8065 19.7761C72.1778 19.9558 71.4207 20.0456 70.5354 20.0456Z", fill: textColor }),
-        React.createElement("path", { d: "M79.6881 20.0456C78.482 20.0456 77.5132 19.6607 76.7819 18.8908C76.0633 18.1081 75.704 17.011 75.704 15.5996C75.704 14.5218 75.9478 13.5787 76.4354 12.7703C76.9358 11.9619 77.6351 11.3396 78.5333 10.9034C79.4443 10.4543 80.4901 10.2297 81.6705 10.2297C82.6457 10.2297 83.5054 10.3388 84.2496 10.5569C85.0067 10.7622 85.6995 11.0638 86.3283 11.4615V19.1602C86.3283 19.404 86.2834 19.5644 86.1935 19.6414C86.1037 19.7184 85.9241 19.7569 85.6546 19.7569H83.6915C83.5503 19.7569 83.4412 19.7376 83.3643 19.6992C83.2873 19.6478 83.2231 19.5708 83.1718 19.4682L82.9216 18.8908C82.5495 19.2886 82.1004 19.5773 81.5743 19.7569C81.0611 19.9494 80.4323 20.0456 79.6881 20.0456ZM81.1316 17.428C81.632 17.428 82.0234 17.3061 82.3057 17.0623C82.588 16.8186 82.7291 16.4721 82.7291 16.023V13.0205C82.4853 12.905 82.1774 12.8473 81.8053 12.8473C81.1252 12.8473 80.5799 13.0847 80.1693 13.5594C79.7715 14.0342 79.5726 14.7014 79.5726 15.5611C79.5726 16.8057 80.0923 17.428 81.1316 17.428Z", fill: textColor }),
-        React.createElement("path", { d: "M98.4184 19.0255C98.5082 19.1282 98.5531 19.2436 98.5531 19.372C98.5531 19.4874 98.5146 19.5837 98.4377 19.6607C98.3607 19.7248 98.258 19.7569 98.1297 19.7569H95.1465C94.9668 19.7569 94.8321 19.7441 94.7423 19.7184C94.6653 19.6799 94.5819 19.6093 94.4921 19.5067L91.8745 15.946V18.7946C91.8745 19.1282 91.7975 19.372 91.6435 19.5259C91.4896 19.6799 91.2265 19.7569 90.8544 19.7569H88.9875C88.6154 19.7569 88.3523 19.6799 88.1984 19.5259C88.0572 19.372 87.9866 19.1282 87.9866 18.7946V7.65066C87.9866 7.31705 88.0636 7.07326 88.2176 6.91928C88.3716 6.75248 88.6282 6.66907 88.9875 6.66907H90.8544C91.2265 6.66907 91.4896 6.75248 91.6435 6.91928C91.7975 7.07326 91.8745 7.31705 91.8745 7.65066V14.0983L94.4151 10.7879C94.4921 10.6852 94.5755 10.6147 94.6653 10.5762C94.7551 10.5377 94.8898 10.5184 95.0695 10.5184H98.0527C98.181 10.5184 98.2773 10.5569 98.3414 10.6339C98.4184 10.6981 98.4569 10.7879 98.4569 10.9034C98.4569 11.0317 98.412 11.1472 98.3222 11.2498L95.031 15.0222L98.4184 19.0255Z", fill: textColor }),
-        React.createElement("path", { d: "M104.668 20.0456C103.59 20.0456 102.628 19.866 101.781 19.5067C100.947 19.1474 100.286 18.6085 99.7985 17.89C99.3109 17.1714 99.0671 16.2925 99.0671 15.2531C99.0671 13.6236 99.529 12.379 100.453 11.5193C101.377 10.6596 102.705 10.2297 104.437 10.2297C106.131 10.2297 107.414 10.6532 108.286 11.5C109.172 12.334 109.614 13.4953 109.614 14.9837C109.614 15.6252 109.332 15.946 108.767 15.946H102.724C102.724 16.4978 102.929 16.9212 103.34 17.2163C103.763 17.5114 104.398 17.659 105.245 17.659C105.771 17.659 106.208 17.6141 106.554 17.5243C106.913 17.4216 107.273 17.2741 107.632 17.0816C107.786 17.0174 107.889 16.9854 107.94 16.9854C108.055 16.9854 108.152 17.0623 108.229 17.2163L108.883 18.4481C108.947 18.5764 108.979 18.6727 108.979 18.7368C108.979 18.8523 108.902 18.9614 108.748 19.064C108.222 19.4105 107.626 19.6607 106.958 19.8146C106.291 19.9686 105.528 20.0456 104.668 20.0456ZM106.15 14.0406C106.15 13.553 106.009 13.1745 105.726 12.905C105.444 12.6356 105.021 12.5009 104.456 12.5009C103.892 12.5009 103.462 12.642 103.167 12.9243C102.872 13.1937 102.724 13.5658 102.724 14.0406H106.15Z", fill: textColor }),
-        React.createElement("path", { d: "M116.211 20.0456C115.133 20.0456 114.113 19.9365 113.151 19.7184C112.189 19.4874 111.412 19.1667 110.822 18.7561C110.604 18.6149 110.495 18.4674 110.495 18.3134C110.495 18.2107 110.533 18.1017 110.61 17.9862L111.553 16.4849C111.656 16.331 111.759 16.254 111.861 16.254C111.926 16.254 112.035 16.2989 112.189 16.3887C112.663 16.6582 113.202 16.8763 113.805 17.0431C114.408 17.2099 115.005 17.2933 115.595 17.2933C116.198 17.2933 116.641 17.2035 116.923 17.0238C117.218 16.8442 117.366 16.5555 117.366 16.1577C117.366 15.7728 117.206 15.4713 116.885 15.2531C116.577 15.035 115.993 14.7591 115.133 14.4255C113.837 13.9379 112.824 13.3926 112.092 12.7896C111.374 12.1737 111.015 11.3396 111.015 10.2875C111.015 9.01718 111.47 8.04843 112.381 7.38121C113.292 6.71398 114.505 6.38037 116.019 6.38037C117.071 6.38037 117.969 6.47661 118.713 6.66907C119.47 6.84871 120.112 7.131 120.638 7.51593C120.856 7.68274 120.965 7.83671 120.965 7.97786C120.965 8.06767 120.927 8.17032 120.85 8.2858L119.907 9.78705C119.791 9.94103 119.688 10.018 119.599 10.018C119.534 10.018 119.425 9.97311 119.271 9.88329C118.527 9.3957 117.642 9.15191 116.615 9.15191C116.064 9.15191 115.64 9.24173 115.345 9.42137C115.05 9.601 114.902 9.89612 114.902 10.3067C114.902 10.589 114.979 10.82 115.133 10.9996C115.287 11.1792 115.493 11.3396 115.749 11.4808C116.019 11.6091 116.429 11.7759 116.981 11.9812L117.347 12.1159C118.296 12.488 119.04 12.8473 119.579 13.1937C120.131 13.5273 120.548 13.9444 120.83 14.4448C121.113 14.9324 121.254 15.5483 121.254 16.2925C121.254 17.4344 120.824 18.3455 119.964 19.0255C119.117 19.7056 117.866 20.0456 116.211 20.0456Z", fill: textColor }),
-        React.createElement("path", { d: "M125.343 19.7569C125.151 19.7569 125.003 19.7248 124.9 19.6607C124.798 19.5965 124.721 19.4682 124.67 19.2757L122.187 10.9611C122.161 10.8841 122.148 10.8264 122.148 10.7879C122.148 10.6083 122.277 10.5184 122.533 10.5184H125.074C125.241 10.5184 125.362 10.5505 125.439 10.6147C125.516 10.666 125.568 10.7558 125.593 10.8841L126.633 15.2531L127.941 11.731C128.006 11.577 128.07 11.4744 128.134 11.423C128.211 11.3589 128.339 11.3268 128.519 11.3268H129.731C129.911 11.3268 130.033 11.3589 130.097 11.423C130.174 11.4744 130.245 11.577 130.309 11.731L131.598 15.2531L132.657 10.8841C132.695 10.7558 132.747 10.666 132.811 10.6147C132.875 10.5505 132.991 10.5184 133.157 10.5184H135.717C135.974 10.5184 136.102 10.6083 136.102 10.7879C136.102 10.8264 136.089 10.8841 136.064 10.9611L133.562 19.2757C133.51 19.4682 133.433 19.5965 133.331 19.6607C133.241 19.7248 133.1 19.7569 132.907 19.7569H131.021C130.841 19.7569 130.707 19.7248 130.617 19.6607C130.527 19.5837 130.45 19.4554 130.386 19.2757L129.116 15.7921L127.845 19.2757C127.794 19.4554 127.717 19.5837 127.614 19.6607C127.524 19.7248 127.39 19.7569 127.21 19.7569H125.343Z", fill: textColor }),
-        React.createElement("path", { d: "M140.981 20.0456C139.775 20.0456 138.806 19.6607 138.075 18.8908C137.356 18.1081 136.997 17.011 136.997 15.5996C136.997 14.5218 137.241 13.5787 137.728 12.7703C138.229 11.9619 138.928 11.3396 139.826 10.9034C140.737 10.4543 141.783 10.2297 142.963 10.2297C143.938 10.2297 144.798 10.3388 145.542 10.5569C146.299 10.7622 146.992 11.0638 147.621 11.4615V19.1602C147.621 19.404 147.576 19.5644 147.486 19.6414C147.396 19.7184 147.217 19.7569 146.947 19.7569H144.984C144.843 19.7569 144.734 19.7376 144.657 19.6992C144.58 19.6478 144.516 19.5708 144.465 19.4682L144.214 18.8908C143.842 19.2886 143.393 19.5773 142.867 19.7569C142.354 19.9494 141.725 20.0456 140.981 20.0456ZM142.424 17.428C142.925 17.428 143.316 17.3061 143.598 17.0623C143.881 16.8186 144.022 16.4721 144.022 16.023V13.0205C143.778 12.905 143.47 12.8473 143.098 12.8473C142.418 12.8473 141.873 13.0847 141.462 13.5594C141.064 14.0342 140.865 14.7014 140.865 15.5611C140.865 16.8057 141.385 17.428 142.424 17.428Z", fill: textColor }),
-        React.createElement("path", { d: "M150.28 23.6447C149.908 23.6447 149.645 23.5678 149.491 23.4138C149.35 23.2598 149.279 23.016 149.279 22.6824V11.654C149.857 11.2434 150.582 10.9034 151.454 10.6339C152.327 10.3645 153.238 10.2297 154.187 10.2297C158.062 10.2297 160 11.8721 160 15.1569C160 16.6453 159.589 17.8322 158.768 18.7176C157.947 19.6029 156.786 20.0456 155.284 20.0456C154.861 20.0456 154.45 19.9943 154.053 19.8916C153.668 19.789 153.347 19.6478 153.09 19.4682V22.6824C153.09 23.016 153.013 23.2598 152.859 23.4138C152.705 23.5678 152.442 23.6447 152.07 23.6447H150.28ZM154.457 17.4473C155.009 17.4473 155.419 17.242 155.689 16.8314C155.971 16.408 156.112 15.8434 156.112 15.1377C156.112 14.3036 155.945 13.7198 155.612 13.3862C155.291 13.0398 154.79 12.8665 154.11 12.8665C153.674 12.8665 153.328 12.9243 153.071 13.0398V16.1C153.071 16.5363 153.193 16.8699 153.437 17.1008C153.681 17.3318 154.021 17.4473 154.457 17.4473Z", fill: textColor }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M4.38998 4.50033C4.01476 2.49106 5.55649 0.634766 7.60049 0.634766C9.40427 0.634766 10.8665 2.09701 10.8665 3.90078V7.92728C11.3177 7.89544 11.7761 7.87911 12.2404 7.87911C12.6865 7.87911 13.1272 7.89418 13.5612 7.9236V3.90078C13.5612 2.09701 15.0234 0.634766 16.8272 0.634766C18.8712 0.634766 20.4129 2.49106 20.0377 4.50033L19.1539 9.23326C22.1872 10.5576 24.4809 12.8577 24.4809 15.748V17.4966C24.4809 19.8734 22.9085 21.8634 20.7102 23.2068C18.4948 24.5606 15.4978 25.3654 12.2404 25.3654C8.98304 25.3654 5.98604 24.5606 3.77065 23.2068C1.57242 21.8634 0 19.8734 0 17.4966V15.748C0 12.873 2.2701 10.5817 5.27785 9.25477L4.38998 4.50033ZM18.0212 9.85508L19.0555 4.3169C19.3159 2.92236 18.2459 1.63399 16.8272 1.63399C15.5753 1.63399 14.5604 2.64886 14.5604 3.90078V9.02479C14.2324 8.98273 13.8991 8.9494 13.5612 8.92524C13.128 8.89426 12.6873 8.87833 12.2404 8.87833C11.7753 8.87833 11.3168 8.89559 10.8665 8.92912C10.5286 8.95429 10.1953 8.98862 9.86729 9.03169V3.90078C9.86729 2.64886 8.85241 1.63399 7.60049 1.63399C6.18184 1.63399 5.11179 2.92235 5.37222 4.3169L6.40988 9.87345C3.16599 11.0784 0.999219 13.2586 0.999219 15.748V17.4966C0.999219 21.2906 6.03208 24.3662 12.2404 24.3662C18.4488 24.3662 23.4817 21.2906 23.4817 17.4966V15.748C23.4817 13.2458 21.2927 11.0562 18.0212 9.85508Z", fill: "#633001" }),
-        React.createElement("path", { d: "M23.4815 17.4967C23.4815 21.2907 18.4486 24.3663 12.2402 24.3663C6.03189 24.3663 0.999023 21.2907 0.999023 17.4967V15.748H23.4815V17.4967Z", fill: "#FEDC90" }),
-        React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M5.37202 4.31671C5.1116 2.92216 6.18164 1.63379 7.6003 1.63379C8.85222 1.63379 9.8671 2.64867 9.8671 3.90059V9.0315C10.6321 8.93102 11.4261 8.87813 12.2402 8.87813C13.0356 8.87813 13.8116 8.9286 14.5602 9.02459V3.90059C14.5602 2.64867 15.5751 1.63379 16.827 1.63379C18.2457 1.63379 19.3157 2.92216 19.0553 4.31671L18.021 9.85488C21.2925 11.056 23.4815 13.2457 23.4815 15.7478C23.4815 19.5418 18.4486 22.6174 12.2402 22.6174C6.03189 22.6174 0.999023 19.5418 0.999023 15.7478C0.999023 13.2584 3.16579 11.0782 6.40968 9.87326L5.37202 4.31671Z", fill: "#D1884F" }),
-        React.createElement("path", { className: "left-eye", d: "M9.11817 15.2485C9.11817 16.2833 8.55896 17.1221 7.86914 17.1221C7.17932 17.1221 6.62012 16.2833 6.62012 15.2485C6.62012 14.2138 7.17932 13.375 7.86914 13.375C8.55896 13.375 9.11817 14.2138 9.11817 15.2485Z", fill: "#633001" }),
-        React.createElement("path", { className: "right-eye", d: "M17.7363 15.2485C17.7363 16.2833 17.1771 17.1221 16.4873 17.1221C15.7975 17.1221 15.2383 16.2833 15.2383 15.2485C15.2383 14.2138 15.7975 13.375 16.4873 13.375C17.1771 13.375 17.7363 14.2138 17.7363 15.2485Z", fill: "#633001" })));
+    var props = __rest(_a, []);
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 250 83" }, props),
+        React.createElement("defs", null,
+            React.createElement("style", null, ".cls-1{isolation:isolate;}.cls-2{fill:url(#gradient_36);}.cls-3{fill:url(#gradient_36-2);}.cls-4{fill:url(#gradient_36-3);}.cls-5{fill:url(#gradient_36-5);}.cls-6{fill:url(#gradient_36-7);}.cls-7{fill:url(#gradient_36-9);}.cls-8{fill:url(#gradient_36-10);}.cls-9{fill:url(#gradient_36-11);}.cls-10{fill:url(#gradient_36-13);}.cls-11{fill:url(#gradient_36-14);}.cls-12{fill:url(#gradient_36-16);}.cls-13{fill:url(#gradient_36-17);}.cls-14{fill:url(#gradient_36-20);}.cls-15{fill:url(#gradient_114);}.cls-16{fill:url(#gradient_36-22);}.cls-17{fill:url(#gradient_71);}.cls-18{fill:url(#gradient_107);}.cls-19{fill:url(#gradient_114-2);}.cls-20{fill:url(#gradient_63);}.cls-21{fill:url(#gradient_63-2);}.cls-22{fill:url(#gradient_36-23);}.cls-23{fill:url(#gradient_114-3);}.cls-24{fill:url(#gradient_36-24);}.cls-25{fill:url(#gradient_63-3);}.cls-26{fill:url(#gradient_2);}.cls-27{fill:url(#gradient_77);}.cls-28{fill:url(#gradient_77-2);}.cls-29{fill:url(#gradient_11);}.cls-30{fill:url(#gradient_63-4);}.cls-31{fill:url(#gradient_63-5);}.cls-32,.cls-36{mix-blend-mode:screen;}.cls-32{fill:url(#gradient_14);}.cls-33{fill:url(#gradient_11-2);}.cls-34{fill:url(#gradient_63-6);}.cls-35{fill:url(#gradient_63-7);}.cls-36{fill:url(#gradient_14-2);}.cls-37{fill:url(#gradient_63-8);}.cls-38{fill:url(#gradient_146);}.cls-39{fill:url(#gradient_146-2);}.cls-40{fill:url(#gradient_146-3);}.cls-41{fill:url(#gradient_146-4);}.cls-42{fill:url(#gradient_63-9);}"),
+            React.createElement("linearGradient", { id: "gradient_36", x1: "92.09", y1: "-0.63", x2: "92.09", y2: "46.38", gradientUnits: "userSpaceOnUse" },
+                React.createElement("stop", { offset: "0", stopColor: "#00a4e6" }),
+                React.createElement("stop", { offset: "1", stopColor: "#0053ca" })),
+            React.createElement("linearGradient", { id: "gradient_36-2", x1: "90.76", y1: "-0.63", x2: "90.76", y2: "46.38", xlinkHref: "#gradient_36" }),
+            React.createElement("linearGradient", { id: "gradient_36-3", x1: "124.63", y1: "-0.63", x2: "124.63", y2: "46.38", xlinkHref: "#gradient_36" }),
+            React.createElement("linearGradient", { id: "gradient_36-5", x1: "107.7", y1: "-0.63", x2: "107.7", y2: "46.38", xlinkHref: "#gradient_36" }),
+            React.createElement("linearGradient", { id: "gradient_36-7", x1: "90.34", y1: "-0.63", x2: "90.34", y2: "46.38", xlinkHref: "#gradient_36" }),
+            React.createElement("linearGradient", { id: "gradient_36-9", x1: "107.7", y1: "-0.63", x2: "107.7", y2: "46.38", xlinkHref: "#gradient_36" }),
+            React.createElement("linearGradient", { id: "gradient_36-10", x1: "102.54", y1: "-0.63", x2: "102.54", y2: "46.38", xlinkHref: "#gradient_36" }),
+            React.createElement("linearGradient", { id: "gradient_36-11", x1: "97.37", y1: "-0.63", x2: "97.37", y2: "46.38", xlinkHref: "#gradient_36" }),
+            React.createElement("linearGradient", { id: "gradient_36-13", x1: "112.86", y1: "-0.63", x2: "112.86", y2: "46.38", xlinkHref: "#gradient_36" }),
+            React.createElement("linearGradient", { id: "gradient_36-14", x1: "118.02", y1: "-0.63", x2: "118.02", y2: "46.38", xlinkHref: "#gradient_36" }),
+            React.createElement("linearGradient", { id: "gradient_36-16", x1: "107.7", y1: "-0.63", x2: "107.7", y2: "46.38", xlinkHref: "#gradient_36" }),
+            React.createElement("linearGradient", { id: "gradient_36-17", x1: "96.74", y1: "-0.63", x2: "96.74", y2: "46.38", xlinkHref: "#gradient_36" }),
+            React.createElement("linearGradient", { id: "gradient_36-20", x1: "118.65", y1: "-0.63", x2: "118.65", y2: "46.38", xlinkHref: "#gradient_36" }),
+            React.createElement("linearGradient", { id: "gradient_114", x1: "88.46", y1: "23.53", x2: "127.5", y2: "22.77", gradientUnits: "userSpaceOnUse" },
+                React.createElement("stop", { offset: "0", stopColor: "#00abe6" }),
+                React.createElement("stop", { offset: "1", stopColor: "#0082e7" })),
+            React.createElement("linearGradient", { id: "gradient_36-22", x1: "131.04", y1: "23.06", x2: "84.52", y2: "23.25", xlinkHref: "#gradient_36" }),
+            React.createElement("radialGradient", { id: "gradient_71", cx: "43.04", cy: "13.27", r: "25.45", gradientUnits: "userSpaceOnUse" },
+                React.createElement("stop", { offset: "0", stopColor: "#292d94" }),
+                React.createElement("stop", { offset: "0.64", stopColor: "#0082e7" }),
+                React.createElement("stop", { offset: "1", stopColor: "#0082e7" })),
+            React.createElement("linearGradient", { id: "gradient_107", x1: "73.97", y1: "38.18", x2: "73.97", y2: "10.73", gradientUnits: "userSpaceOnUse" },
+                React.createElement("stop", { offset: "0", stopColor: "#292d94" }),
+                React.createElement("stop", { offset: "1", stopColor: "#0082e7" })),
+            React.createElement("linearGradient", { id: "gradient_114-2", x1: "37.83", y1: "23.73", x2: "79.38", y2: "23.73", xlinkHref: "#gradient_114" }),
+            React.createElement("linearGradient", { id: "gradient_63", x1: "68.41", y1: "31.93", x2: "79.54", y2: "31.93", gradientUnits: "userSpaceOnUse" },
+                React.createElement("stop", { offset: "0", stopColor: "#fff" }),
+                React.createElement("stop", { offset: "1", stopColor: "#008bff" })),
+            React.createElement("linearGradient", { id: "gradient_63-2", x1: "48.8", y1: "15.37", x2: "37.67", y2: "15.37", xlinkHref: "#gradient_63" }),
+            React.createElement("linearGradient", { id: "gradient_36-23", x1: "13.38", y1: "41.67", x2: "20.98", y2: "26.74", xlinkHref: "#gradient_36" }),
+            React.createElement("linearGradient", { id: "gradient_114-3", x1: "13.53", y1: "5.68", x2: "26.65", y2: "31.21", xlinkHref: "#gradient_114" }),
+            React.createElement("linearGradient", { id: "gradient_36-24", x1: "4.14", y1: "36.96", x2: "11.74", y2: "22.03", xlinkHref: "#gradient_36" }),
+            React.createElement("linearGradient", { id: "gradient_63-3", x1: "3.46", y1: "30.03", x2: "28.78", y2: "30.03", xlinkHref: "#gradient_63" }),
+            React.createElement("linearGradient", { id: "gradient_2", x1: "15.68", y1: "25.27", x2: "15.9", y2: "29.88", gradientUnits: "userSpaceOnUse" },
+                React.createElement("stop", { offset: "0", stopColor: "#0053ca" }),
+                React.createElement("stop", { offset: "1", stopColor: "#00a4e6" })),
+            React.createElement("linearGradient", { id: "gradient_77", x1: "137.17", y1: "24.14", x2: "207.81", y2: "21.47", xlinkHref: "#gradient_71" }),
+            React.createElement("linearGradient", { id: "gradient_77-2", x1: "155.55", y1: "52.18", x2: "175.94", y2: "-7.26", xlinkHref: "#gradient_71" }),
+            React.createElement("linearGradient", { id: "gradient_11", x1: "184.91", y1: "1.81", x2: "177.29", y2: "35.88", gradientUnits: "userSpaceOnUse" },
+                React.createElement("stop", { offset: "0", stopColor: "#00b5ff" }),
+                React.createElement("stop", { offset: "0.19", stopColor: "#00acfb" }),
+                React.createElement("stop", { offset: "1", stopColor: "#0082e7" })),
+            React.createElement("linearGradient", { id: "gradient_63-4", x1: "166.15", y1: "19.98", x2: "185.07", y2: "19.98", xlinkHref: "#gradient_63" }),
+            React.createElement("linearGradient", { id: "gradient_63-5", x1: "190.17", y1: "-4.35", x2: "185.97", y2: "19.66", xlinkHref: "#gradient_63" }),
+            React.createElement("linearGradient", { id: "gradient_14", x1: "198.69", y1: "-10.6", x2: "190.11", y2: "10.11", gradientUnits: "userSpaceOnUse" },
+                React.createElement("stop", { offset: "0", stopColor: "#fff" }),
+                React.createElement("stop", { offset: "1" })),
+            React.createElement("linearGradient", { id: "gradient_11-2", x1: "455.25", y1: "1.81", x2: "447.63", y2: "35.88", gradientTransform: "matrix(-1, 0, 0, 1, 596.61, 0)", xlinkHref: "#gradient_11" }),
+            React.createElement("linearGradient", { id: "gradient_63-6", x1: "160.13", y1: "19.98", x2: "141.21", y2: "19.98", xlinkHref: "#gradient_63" }),
+            React.createElement("linearGradient", { id: "gradient_63-7", x1: "459.74", y1: "-4.35", x2: "455.55", y2: "19.66", gradientTransform: "matrix(-1, 0, 0, 1, 596.61, 0)", xlinkHref: "#gradient_63" }),
+            React.createElement("linearGradient", { id: "gradient_14-2", x1: "468.27", y1: "-10.6", x2: "459.69", y2: "10.11", gradientTransform: "matrix(-1, 0, 0, 1, 596.61, 0)", xlinkHref: "#gradient_14" }),
+            React.createElement("linearGradient", { id: "gradient_63-8", x1: "155.91", y1: "15.12", x2: "163.33", y2: "15.12", xlinkHref: "#gradient_63" }),
+            React.createElement("linearGradient", { id: "gradient_146", x1: "186.05", y1: "91.3", x2: "157.82", y2: "33.53", gradientUnits: "userSpaceOnUse" },
+                React.createElement("stop", { offset: "0", stopColor: "#00a1ff" }),
+                React.createElement("stop", { offset: "1", stopColor: "#fff" })),
+            React.createElement("linearGradient", { id: "gradient_146-2", x1: "202.02", y1: "83.49", x2: "173.8", y2: "25.72", xlinkHref: "#gradient_146" }),
+            React.createElement("linearGradient", { id: "gradient_146-3", x1: "219.63", y1: "74.89", x2: "191.41", y2: "17.12", xlinkHref: "#gradient_146" }),
+            React.createElement("linearGradient", { id: "gradient_146-4", x1: "225.64", y1: "71.95", x2: "197.42", y2: "14.18", xlinkHref: "#gradient_146" }),
+            React.createElement("linearGradient", { id: "gradient_63-9", x1: "88.39", y1: "23.16", x2: "127.13", y2: "23.16", xlinkHref: "#gradient_63" })),
+        React.createElement("g", { className: "cls-1" },
+            React.createElement("g", { id: "Layer_2", "data-name": "Layer 2" },
+                React.createElement("g", { id: "Layer_1-2", "data-name": "Layer 1" },
+                    React.createElement("path", { className: "cls-2", d: "M92.33,10.9c-.21.26-.41.53-.6.8L92.45,13Z" }),
+                    React.createElement("path", { className: "cls-3", d: "M90.94,13.48l-.17-.31a3.37,3.37,0,0,0-.19.32Z" }),
+                    React.createElement("path", { className: "cls-4", d: "M124.63,33.14l.18-.32h-.36Z" }),
+                    React.createElement("path", { className: "cls-4", d: "M124.45,13.48h.36l-.18-.32Z" }),
+                    React.createElement("path", { className: "cls-5", d: "M107.52,3.5l.18.31.18-.31h-.36Z" }),
+                    React.createElement("path", { className: "cls-5", d: "M107.88,42.81l-.18-.3-.18.3h.36Z" }),
+                    React.createElement("path", { className: "cls-6", d: "M89.79,15.05q-.21.46-.39.93l1.89-1Z" }),
+                    React.createElement("path", { className: "cls-3", d: "M90.94,32.83h-.36a3.37,3.37,0,0,0,.19.32Z" }),
+                    React.createElement("path", { className: "cls-7", d: "M110.05,24.51a2.72,2.72,0,1,0-3.71,1,2.72,2.72,0,0,0,3.71-1Zm-1.34-.77a1.18,1.18,0,0,1-1,.58,1.2,1.2,0,0,1-.59-.15A1.17,1.17,0,0,1,107.7,22a1.1,1.1,0,0,1,.58.16,1.12,1.12,0,0,1,.54.7A1.15,1.15,0,0,1,108.71,23.74Z" }),
+                    React.createElement("path", { className: "cls-8", d: "M105.84,12.31l-6.49-3.6-.12,7.41,6.49,3.6Zm-1.63,4.8-3.41-1.89.06-3.91,3.42,1.9Z" }),
+                    React.createElement("path", { className: "cls-9", d: "M91,23.16,97.37,27l6.36-3.81-6.36-3.82Zm6.36,2-3.35-2,3.35-2,3.35,2Z" }),
+                    React.createElement("path", { className: "cls-8", d: "M99.28,30.16l0,0,.12,7.42L105.8,34l0,0-.12-7.42ZM100.86,35l-.06-3.91,3.41-1.89.07,3.9Z" }),
+                    React.createElement("path", { className: "cls-10", d: "M109.56,34V34l6.48,3.6.13-7.37v0l-6.49-3.6Zm1.63-4.75,3.41,1.89L114.54,35l-3.42-1.9Z" }),
+                    React.createElement("path", { className: "cls-11", d: "M124.38,23.16,118,19.34l-6.36,3.82L118,27Zm-6.36-2,3.35,2-3.35,2-3.35-2Z" }),
+                    React.createElement("path", { className: "cls-10", d: "M116.12,16.15l0,0L116,8.71l-6.44,3.57,0,0,.12,7.41Zm-1.58-4.84.06,3.91-3.41,1.89-.07-3.9Z" }),
+                    React.createElement("path", { className: "cls-12", d: "M106.92,9.44l-6.55-4.3-.85,1.3,7.4,4.85v8.37h1.55V11.29l7.41-4.85L115,5.14l-6.56,4.3V7l4.31-2.82a19.36,19.36,0,0,0-2.14-.45l-1.78,1.16.77-1.29c-.57,0-1.16-.08-1.75-.09l-.18.31-.18-.31c-.6,0-1.18,0-1.76.09l.78,1.29-1.78-1.16a21.34,21.34,0,0,0-2.14.44L106.92,7Z" }),
+                    React.createElement("path", { className: "cls-13", d: "M95.43,17l-7,3.52.7,1.39,7.91-4,7.24,4.18.78-1.34-7.25-4.19-.5-8.84-1.55.09.45,7.83L94.09,14.4l-.3-5.14c-.51.52-1,1.07-1.46,1.64L92.45,13l-.72-1.31c-.34.48-.66,1-1,1.47l.17.31h-.36c-.28.51-.55,1-.79,1.56l1.5,0L89.4,16a18.77,18.77,0,0,0-.69,2.08l4.6-2.32Z" }),
+                    React.createElement("path", { className: "cls-13", d: "M96.21,30.69l-.45,7.82,1.55.09.5-8.84,7.25-4.18-.78-1.35L97,28.42l-7.91-4-.7,1.39,7,3.52-2.12,1.23-4.6-2.32a18.1,18.1,0,0,0,.69,2.08l1.89,1-1.5,0c.24.54.51,1.06.79,1.56h.36l-.17.31q.45.77,1,1.47l.72-1.31-.12,2.11c.46.57,1,1.12,1.46,1.64l.3-5.14Z" }),
+                    React.createElement("path", { className: "cls-12", d: "M108.47,36.87,115,41.12l.08.05.85-1.3L108.47,35V26.65h-1.55V35l-7.33,4.81-.07,0,.85,1.3,6.55-4.3v2.45l-4.3,2.83a18.87,18.87,0,0,0,2.14.44l1.78-1.16-.78,1.29c.58.05,1.17.08,1.76.09l.18-.3.18.3c.59,0,1.18,0,1.75-.09l-.77-1.29,1.78,1.16a19.33,19.33,0,0,0,2.14-.44l-4.31-2.83Z" }),
+                    React.createElement("path", { className: "cls-14", d: "M124.45,32.83h.36c.29-.5.55-1,.8-1.56l-1.51,0,1.9-1a20.23,20.23,0,0,0,.68-2.08l-4.59,2.32L120,29.34l6.93-3.48.07,0-.69-1.39-7.91,4-7.25-4.19-.77,1.35,7.24,4.18.5,8.75v.09l1.55-.09-.45-7.82,2.12,1.22.29,5.14a18.81,18.81,0,0,0,1.46-1.64l-.12-2.11.73,1.31q.51-.7,1-1.47Z" }),
+                    React.createElement("path", { className: "cls-14", d: "M119.19,15.63l.44-7.74V7.8l-1.55-.09-.51,8.84-7.24,4.19.77,1.34,7.25-4.18,7.83,3.94.08,0,.69-1.39L120,17l2.13-1.23,4.59,2.32A21.06,21.06,0,0,0,126,16l-1.9-1,1.51,0c-.25-.53-.51-1.05-.8-1.56h-.36l.18-.31q-.45-.75-1-1.47L122.94,13l.12-2.11a18.81,18.81,0,0,0-1.46-1.64l-.29,5.14Z" }),
+                    React.createElement("path", { className: "cls-15", d: "M107.7,43.11a20,20,0,1,1,20-19.95A20,20,0,0,1,107.7,43.11Zm0-38.24A18.29,18.29,0,1,0,126,23.16,18.31,18.31,0,0,0,107.7,4.87Z" }),
+                    React.createElement("path", { className: "cls-16", d: "M107.7,46.31a23.16,23.16,0,1,1,23.15-23.15A23.18,23.18,0,0,1,107.7,46.31Zm0-42.4A19.25,19.25,0,1,0,127,23.16,19.26,19.26,0,0,0,107.7,3.91Z" }),
+                    React.createElement("rect", { className: "cls-17", x: "37.83", y: "2.93", width: "10.82", height: "41.62" }),
+                    React.createElement("rect", { className: "cls-18", x: "68.56", y: "2.93", width: "10.82", height: "41.62" }),
+                    React.createElement("path", { className: "cls-19", d: "M70.11,30.07,48.65,2.91H37.83v9.45c1.59-2.41,6.68,2.34,9.27,5L68.56,44.55H79.38V35.1C77.79,37.51,72.7,32.76,70.11,30.07Z" }),
+                    React.createElement("path", { className: "cls-20", d: "M68.56,28.1c.81.84,1.61,1.66,2.43,2.47s1.65,1.61,2.53,2.34a18.13,18.13,0,0,0,2.75,2,4.88,4.88,0,0,0,1.57.61,1.65,1.65,0,0,0,1.54-.46,1.69,1.69,0,0,1-1.57.65,5,5,0,0,1-1.68-.54,15.44,15.44,0,0,1-2.86-2,33.62,33.62,0,0,1-2.49-2.43A31.55,31.55,0,0,1,68.56,28.1Z" }),
+                    React.createElement("path", { className: "cls-21", d: "M48.65,19.2c-.81-.83-1.61-1.65-2.43-2.46s-1.65-1.61-2.53-2.35a18.06,18.06,0,0,0-2.75-2,5,5,0,0,0-1.57-.62,1.65,1.65,0,0,0-1.54.47,1.72,1.72,0,0,1,1.57-.66,5.51,5.51,0,0,1,1.68.54,15.49,15.49,0,0,1,2.86,2,31.73,31.73,0,0,1,2.49,2.43A29.64,29.64,0,0,1,48.65,19.2Z" }),
+                    React.createElement("path", { className: "cls-22", d: "M31.56,29.9s1.77,13.59-14.29,14.82a23.6,23.6,0,0,1-8-1C5.6,42.58.75,40.21,0,39.34l4.25-8.46c.56.64,5.43,6,10.15,5.58a5.55,5.55,0,0,0,2.87-1,5,5,0,0,0,2.11-4.19c-.21-2.28-2.53-4.35-5.66-4.57C13.72,26.68,26.09,20,31.56,29.9Z" }),
+                    React.createElement("path", { className: "cls-23", d: "M29.89,4.43l-4.33,8.41s-4-3.66-7.16-2.77-5.1,4.75,0,7.44S31,20.73,31.56,29.9c0,0,.84,7.78-5.09,11.85.24-.36,3.79-5.83,1.29-10.55a8.42,8.42,0,0,0-3.21-3.49c-4.26-2.33-9.54-1.39-10.83-1C13.72,26.68.63,25,3.29,12S18.35-.48,29.89,4.43Z" }),
+                    React.createElement("path", { className: "cls-24", d: "M19.12,26.17s-9.85,1.12-15.5-6.84c0,0,1.8,6.5,11.61,7.62C15.23,27,17.94,27,19.12,26.17Z" }),
+                    React.createElement("path", { className: "cls-25", d: "M27.06,40.74A14.3,14.3,0,0,0,28.4,36.2a8.6,8.6,0,0,0-.63-4.6,10,10,0,0,0-1.28-2A8.89,8.89,0,0,0,24.83,28a8.42,8.42,0,0,0-4.38-1.43c-1.56-.12-3.17-.15-4.76-.3A17.57,17.57,0,0,1,11,25.2a15.76,15.76,0,0,1-4.17-2.35,16.57,16.57,0,0,1-3.22-3.52,16,16,0,0,0,7.5,5.59,18.25,18.25,0,0,0,4.61,1c1.58.14,3.15.16,4.76.26a8.92,8.92,0,0,1,4.56,1.54,9.94,9.94,0,0,1,1.71,1.72,8.21,8.21,0,0,1,1.83,6.79A14.39,14.39,0,0,1,27.06,40.74Z" }),
+                    React.createElement("path", { className: "cls-26", d: "M14.56,26.86a6.85,6.85,0,0,1,2.42.85S15.44,26.53,14.56,26.86Z" }),
+                    React.createElement("polygon", { className: "cls-27", points: "168.69 2.15 168.38 2.15 157.89 2.15 157.59 2.15 147.43 43.77 158.23 43.77 158.23 43.77 163.14 23.64 168.05 43.77 168.05 43.77 178.84 43.77 168.69 2.15" }),
+                    React.createElement("path", { className: "cls-28", d: "M163.14,23.64s-1-23.23-7.06-15.29l1.51-6.2h11.1l8,32.54L167.62,42Z" }),
+                    React.createElement("path", { className: "cls-29", d: "M184.88,2.15,173.66,29.9h0l-1.5,3.71c-1.44,2.82-2.9,5.83-5.87,3l1.76,7.18h10.79L195.68,2.15Z" }),
+                    React.createElement("path", { className: "cls-30", d: "M184.88,2.15q-3,7.94-6.19,15.8c-1,2.63-2.11,5.24-3.18,7.86s-2.14,5.23-3.24,7.84h0a11.35,11.35,0,0,1-.89,1.94A6.22,6.22,0,0,1,170,37.22a2.31,2.31,0,0,1-2,.52,3.78,3.78,0,0,1-1.74-1.15,3.65,3.65,0,0,0,1.76,1.08,2.18,2.18,0,0,0,1.9-.56,5.79,5.79,0,0,0,1.26-1.64,11.09,11.09,0,0,0,.84-1.9h0q1.55-3.95,3.13-7.88t3.17-7.87Q181.55,10,184.88,2.15Z" }),
+                    React.createElement("polygon", { className: "cls-31", points: "191.03 2.15 184.14 18.67 190.22 2.15 191.03 2.15" }),
+                    React.createElement("polygon", { className: "cls-32", points: "191.03 2.15 195.68 2.15 189.27 17.98 184.88 16.89 191.03 2.15" }),
+                    React.createElement("path", { className: "cls-33", d: "M141.39,2.15,152.62,29.9h0l1.49,3.71c1.44,2.82,2.91,5.83,5.88,3l-1.76,7.18h-10.8L130.6,2.15Z" }),
+                    React.createElement("path", { className: "cls-34", d: "M141.39,2.15q3.35,7.8,6.53,15.66c1.08,2.62,2.13,5.24,3.18,7.87s2.1,5.25,3.12,7.88h0a10.32,10.32,0,0,0,.83,1.9,6,6,0,0,0,1.26,1.64,2.2,2.2,0,0,0,1.91.56A3.69,3.69,0,0,0,160,36.59a3.76,3.76,0,0,1-1.75,1.15,2.31,2.31,0,0,1-2-.52,6.39,6.39,0,0,1-1.34-1.64,10.63,10.63,0,0,1-.89-1.94h0q-1.63-3.91-3.24-7.84c-1.07-2.62-2.13-5.23-3.18-7.86Q144.42,10.07,141.39,2.15Z" }),
+                    React.createElement("polygon", { className: "cls-35", points: "136 2.15 142.9 18.67 136.82 2.15 136 2.15" }),
+                    React.createElement("polygon", { className: "cls-36", points: "136 2.15 131.36 2.15 137.76 17.98 142.15 16.89 136 2.15" }),
+                    React.createElement("path", { className: "cls-37", d: "M156.08,8.35a4,4,0,0,1,2-1.7,2.07,2.07,0,0,1,.7,0,1.81,1.81,0,0,1,.65.28l.29.2.24.26a2.39,2.39,0,0,1,.4.56,6.57,6.57,0,0,1,.6,1.22c.15.43.28.86.41,1.29.23.86.44,1.73.63,2.6a51.33,51.33,0,0,1,1.1,10.62c-.06-.88-.15-1.77-.25-2.65s-.2-1.77-.32-2.65c-.25-1.75-.53-3.51-.91-5.24-.18-.87-.38-1.73-.59-2.59-.13-.42-.25-.85-.39-1.26a8,8,0,0,0-.53-1.19,2.47,2.47,0,0,0-.36-.53l-.21-.24a1.43,1.43,0,0,0-.24-.19,1.71,1.71,0,0,0-.56-.27,1.62,1.62,0,0,0-.62,0A3.88,3.88,0,0,0,156.08,8.35Z" }),
+                    React.createElement("path", { className: "cls-38", d: "M173.21,30.53l-.91.48c-.62,1.09-1.41,2-2.21,1.29-1.14-.88.22-1.93.93-2.5a1.34,1.34,0,0,0,.19-.91c-.68.11-1.41.91-1.88,1.27-.77.7-1.4,1.35-2.15,2.1a52.64,52.64,0,0,0-3.73,4.8,36,36,0,0,0-2.86,5.29c-.29.95-.63,1.76-.84,2.74-.12.66-.29,1.9.3,2.38l0,0c1.87.35,3.74.15,5.67.64a6.12,6.12,0,0,1,4.35,3.3,8.31,8.31,0,0,1,.67,4.8,25.3,25.3,0,0,1-1.45,6.55,25.86,25.86,0,0,1-3.18,5.76A13.71,13.71,0,0,1,161,72.69c-1.29.52-2.68.53-3.43-.78-.94-1.62-.71-4.06-.14-5.8.4-1.22,1.18-2.59,2.6-2.78a2.88,2.88,0,0,1,1-.09.77.77,0,0,1,.44,1.22c-1.31,1.7-2.81,4.32-2.06,6.58,1.53-.07,3-2,3.67-3.17a33.82,33.82,0,0,0,3.14-5.29c1.46-3,3.06-7,2-10.38-.84-1.66-2.51-2.21-4.19-2.36s-4.62.43-5.87-1.13-.89-4.26-.34-6a21.57,21.57,0,0,1,3.09-6.11,36.35,36.35,0,0,1,4.4-5.47c1.46-1.48,3.3-3.4,5.36-4A1.73,1.73,0,0,1,173,28.71c.14-.06.31-.07.5-.15.58-.07,1.51.16,1,.89C174.05,29.85,173.68,30.17,173.21,30.53Z" }),
+                    React.createElement("path", { className: "cls-39", d: "M177.2,47.18a11.93,11.93,0,0,0,2.12-1l.44-.69a4.57,4.57,0,0,1,1.69-1.46c.38-.16,1.51-.39,1.17.41-.4,1.06-1.1,2-1.62,3a14.54,14.54,0,0,0-1.38,3.46,14.68,14.68,0,0,0-.25,3.34,2.3,2.3,0,0,0,.49,1.36c.28.27.89-.14,1.06-.27,2-1.21,3.3-3.68,4.43-5.7l.91-2c.22-1.26.58-2.41,1.42-2.14.34.15.45.43.44.94l0,.07a5.6,5.6,0,0,1-.38,1.54,7.22,7.22,0,0,0,0,2.67c.07.58.3,1.55.88,1.76.27.11.87-.47,1-.69a9.55,9.55,0,0,0,1.9-4.11c.19-.75.35-1.6.49-2.49a12.65,12.65,0,0,0,.21-1.81c-.65-.63-1-1.31-.22-1.92a1.05,1.05,0,0,1,1.28-.13,1.81,1.81,0,0,1,.79,1.4h.05a2.2,2.2,0,0,0,1.14.59,1.33,1.33,0,0,0,1.17-.25,2.69,2.69,0,0,0,.56-.56c.12-.11.32-.58.49-.71.29-.39.52.18.45.43a5.17,5.17,0,0,1-.56,1.35,2.81,2.81,0,0,1-2.59,1.16,1.16,1.16,0,0,1-.68-.16,16.9,16.9,0,0,1-1.57,5.87,6.73,6.73,0,0,1-3.2,3.64c-1.78.56-2.68-1.25-3.06-2.87a15.53,15.53,0,0,1-1.45,2.59c-1,1.54-3.31,4.47-5.54,3.65-2.78-.93-2.1-5.56-1.51-7.69a7.33,7.33,0,0,1,.42-1.28,20.14,20.14,0,0,1-4.3,1.75c-1.39.28-2.69.65-3.95-.12-.43-.11-.61-.54-.79-.85s-.46-1.26.34-1.09A12,12,0,0,0,177.2,47.18Z" }),
+                    React.createElement("path", { className: "cls-40", d: "M200,41.42a15.84,15.84,0,0,0-1.06,4.11,6.85,6.85,0,0,0-.07,2.14c0,.17.14.89.3.88.77-.15,1.23-.94,1.6-1.54a14.55,14.55,0,0,0,1.52-3l.37-.88a28.21,28.21,0,0,1,.53-3.78,2.88,2.88,0,0,1,1.18-2.15c.53-.21.84,0,.95.56a12.44,12.44,0,0,1-.51,3.11l0,1.41a10.79,10.79,0,0,0,.15,2.56,2,2,0,0,0,.32.92c.77-.14,1.41-1.74,1.63-2.28a28.37,28.37,0,0,0,1.5-3.17c.46-.91.72-1.8,1.2-2.66.24-.38.87-1.69,1.36-.89.27.5-.22,1.76-.31,2.24l-1.05,3.16c-.62,1.76-1.54,4.31-3.21,5.26-1.44,1-2.89,0-3.32-1.43a14.74,14.74,0,0,1-1,1.91c-.61,1-1.46,2.43-2.87,2.4-2.37.07-2.75-3.06-2.55-4.76a12.33,12.33,0,0,1,2.92-7.21,7.28,7.28,0,0,1,3.18-2.46,3.77,3.77,0,0,1,1.08-.22c.49,0,.76.64.21.8C202,37.13,200.75,39.6,200,41.42Z" }),
+                    React.createElement("path", { className: "cls-41", d: "M210.87,35.43c.45-1.08,1.8-3.24,3.2-2.25.42.33.39,1,.37,1.58.36-.76.8-1.45,1.21-2.23.63-1.2,2.59-4.17,4.29-2.74,1.48,1.18,1.15,4.21.91,5.81-.77,4-3.43,8.25-7.67,9.08l-.14.06-.13.78a126.44,126.44,0,0,1-3.13,13.92,29.84,29.84,0,0,1-1.12,3c-.31.74-.68,1.61-1.6,1.54-1.56-.14-.51-3.58-.4-4.4a107.67,107.67,0,0,1,3.73-14.11l.3-.91c-.5-.13-1.5-.67-.88-1.2a1.57,1.57,0,0,1,1-.13l.32,0,.68-2.17,0-.07a37.37,37.37,0,0,0,.65-3.88l.26-1.56-.4.66c-.35.65-.64,1.32-1,2s-.61,1.08-1,1.63c-.09.2-.73.69-.7.06A10.34,10.34,0,0,1,210.87,35.43ZM209.05,54.5s0,.12,0,.17l.31-1.41ZM214,38.91c-.13,1.17-.3,2.41-.5,3.55a8.22,8.22,0,0,0,1.33-.71,10.54,10.54,0,0,0,4-5,10.78,10.78,0,0,0,.74-3.25,10.81,10.81,0,0,0-.49-2.7l-.09,0c-1.07.26-1.77,1.55-2.3,2.44-.73,1.35-1.46,2.71-2,4.05Z" }),
+                    React.createElement("path", { className: "cls-42", d: "M127.13,23.16a19.39,19.39,0,0,1-33,13.76,19.67,19.67,0,0,1-4.23-6.31,19.37,19.37,0,1,1,37.24-7.45Zm0,0A19.13,19.13,0,0,0,94.42,9.69a18.93,18.93,0,0,0-4.11,6.19,19.13,19.13,0,0,0,35.34,14.64A19.38,19.38,0,0,0,127.13,23.16Z" }))))));
 };
-var LogoWithText = React.memo(Logo, function (prev, next) { return prev.isDark === next.isDark; });
+var LogoWithText = React.memo(Logo);
 
 var Icon$1n = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
@@ -3524,26 +3656,25 @@ MenuButton.defaultProps = {
 };
 var templateObject_1$O;
 
-var blink = keyframes(templateObject_1$P || (templateObject_1$P = __makeTemplateObject(["\n  0%,  100% { transform: scaleY(1); } \n  50% { transform:  scaleY(0.1); } \n"], ["\n  0%,  100% { transform: scaleY(1); } \n  50% { transform:  scaleY(0.1); } \n"])));
-var StyledLink$1 = styled(Link$1)(templateObject_2$j || (templateObject_2$j = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 160px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .right-eye {\n    animation-delay: 20ms;\n  }\n  &:hover {\n    .left-eye,\n    .right-eye {\n      transform-origin: center 60%;\n      animation-name: ", ";\n      animation-duration: 350ms;\n      animation-iteration-count: 1;\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 160px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .right-eye {\n    animation-delay: 20ms;\n  }\n  &:hover {\n    .left-eye,\n    .right-eye {\n      transform-origin: center 60%;\n      animation-name: ", ";\n      animation-duration: 350ms;\n      animation-iteration-count: 1;\n    }\n  }\n"])), function (_a) {
+var StyledLink$1 = styled(Link$1)(templateObject_1$P || (templateObject_1$P = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 250px;\n    display: none;\n    margin-bottom: -30px;\n    ", " {\n      display: block;\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 250px;\n    display: none;\n    margin-bottom: -30px;\n    ", " {\n      display: block;\n    }\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 }, function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
-}, blink);
+});
 var Logo$1 = function (_a) {
-    var isPushed = _a.isPushed, togglePush = _a.togglePush, isDark = _a.isDark, href = _a.href;
+    var isPushed = _a.isPushed, togglePush = _a.togglePush, href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React.createElement(React.Fragment, null,
         React.createElement(Icon$B, { className: "mobile-icon" }),
-        React.createElement(LogoWithText, { className: "desktop-icon", isDark: isDark })));
+        React.createElement(LogoWithText, { className: "desktop-icon" })));
     return (React.createElement(Flex, null,
         React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$1j, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$1i, { width: "24px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React.createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React.createElement(StyledLink$1, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
 };
-var Logo$2 = React.memo(Logo$1, function (prev, next) { return prev.isPushed === next.isPushed && prev.isDark === next.isDark; });
-var templateObject_1$P, templateObject_2$j;
+var Logo$2 = React.memo(Logo$1, function (prev, next) { return prev.isPushed === next.isPushed; });
+var templateObject_1$P;
 
 var status = {
     LIVE: {
@@ -3753,7 +3884,7 @@ var SIDEBAR_WIDTH_FULL = 240;
 var SIDEBAR_WIDTH_REDUCED = 56;
 
 var rainbowAnimation = keyframes(templateObject_1$Q || (templateObject_1$Q = __makeTemplateObject(["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"], ["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"])));
-var LinkLabel = styled.div(templateObject_2$k || (templateObject_2$k = __makeTemplateObject(["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"], ["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"])), function (_a) {
+var LinkLabel = styled.div(templateObject_2$j || (templateObject_2$j = __makeTemplateObject(["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"], ["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"])), function (_a) {
     var isPushed = _a.isPushed, theme = _a.theme;
     return (isPushed ? theme.colors.textSubtle : "transparent");
 });
@@ -3797,10 +3928,10 @@ var LinkStatus = styled(Text)(templateObject_4$6 || (templateObject_4$6 = __make
     return theme.colors[color];
 });
 var LinkLabelMemo = React.memo(LinkLabel, function (prev, next) { return prev.isPushed === next.isPushed; });
-var templateObject_1$Q, templateObject_2$k, templateObject_3$9, templateObject_4$6;
+var templateObject_1$Q, templateObject_2$j, templateObject_3$9, templateObject_4$6;
 
 var Container$2 = styled.div(templateObject_1$R || (templateObject_1$R = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  // Safari fix\n  flex-shrink: 0;\n"], ["\n  display: flex;\n  flex-direction: column;\n  // Safari fix\n  flex-shrink: 0;\n"])));
-var AccordionContent = styled.div(templateObject_2$l || (templateObject_2$l = __makeTemplateObject(["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-width: 1px 0;\n"], ["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-width: 1px 0;\n"])), function (_a) {
+var AccordionContent = styled.div(templateObject_2$k || (templateObject_2$k = __makeTemplateObject(["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-width: 1px 0;\n"], ["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-width: 1px 0;\n"])), function (_a) {
     var isOpen = _a.isOpen, maxHeight = _a.maxHeight;
     return (isOpen ? maxHeight + "px" : 0);
 }, function (_a) {
@@ -3827,7 +3958,7 @@ var Accordion = function (_a) {
             isOpen ? React.createElement(Icon$8, null) : React.createElement(Icon$7, null)),
         React.createElement(AccordionContent, { isOpen: isOpen, isPushed: isPushed, maxHeight: React.Children.count(children) * MENU_ENTRY_HEIGHT }, children)));
 };
-var templateObject_1$R, templateObject_2$l;
+var templateObject_1$R, templateObject_2$k;
 
 var MenuLink = function (_a) {
     var href = _a.href, otherProps = __rest(_a, ["href"]);
@@ -3915,7 +4046,7 @@ var Container$4 = styled.div(templateObject_1$U || (templateObject_1$U = __makeT
     var theme = _a.theme;
     return theme.nav.background;
 });
-var SettingsEntry = styled.div(templateObject_2$m || (templateObject_2$m = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
+var SettingsEntry = styled.div(templateObject_2$l || (templateObject_2$l = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
 var SocialEntry = styled.div(templateObject_3$a || (templateObject_3$a = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
     var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd, currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang;
@@ -3932,7 +4063,7 @@ var PanelFooter = function (_a) {
             React.createElement(ThemeSwitcher$1, { isDark: isDark, toggleTheme: toggleTheme }),
             React.createElement(LangSelector$1, { currentLang: currentLang, langs: langs, setLang: setLang }))));
 };
-var templateObject_1$U, templateObject_2$m, templateObject_3$a;
+var templateObject_1$U, templateObject_2$l, templateObject_3$a;
 
 var StyledPanel = styled.div(templateObject_1$V || (templateObject_1$V = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100%;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  border-right: ", ";\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  ", ";\n\n  ", " {\n    border-right: 2px solid rgba(133, 133, 133, 0.1);\n    width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100%;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  border-right: ", ";\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  ", ";\n\n  ", " {\n    border-right: 2px solid rgba(133, 133, 133, 0.1);\n    width: ", ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
@@ -4125,7 +4256,7 @@ var StyleButton = styled(Text).attrs({ role: "button" })(templateObject_1$X || (
     var theme = _a.theme;
     return theme.colors.primary;
 });
-var Tooltip = styled.div(templateObject_2$n || (templateObject_2$n = __makeTemplateObject(["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"], ["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"])), function (_a) {
+var Tooltip = styled.div(templateObject_2$m || (templateObject_2$m = __makeTemplateObject(["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"], ["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"])), function (_a) {
     var isTooltipDisplayed = _a.isTooltipDisplayed;
     return (isTooltipDisplayed ? "block" : "none");
 }, function (_a) {
@@ -4165,7 +4296,7 @@ var CopyToClipboard = function (_a) {
         React.createElement(Icon$t, { width: "20px", color: "primary", ml: "4px" }),
         React.createElement(Tooltip, { isTooltipDisplayed: isTooltipDisplayed }, "Copied")));
 };
-var templateObject_1$X, templateObject_2$n;
+var templateObject_1$X, templateObject_2$m;
 
 var AccountModal = function (_a) {
     var account = _a.account, logout = _a.logout, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
@@ -4205,7 +4336,7 @@ var UserBlock$1 = React.memo(UserBlock, function (prevProps, nextProps) {
 });
 
 var StyledAvatar = styled.div(templateObject_1$Y || (templateObject_1$Y = __makeTemplateObject(["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"], ["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"])));
-var Pip = styled.div(templateObject_2$o || (templateObject_2$o = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"])), function (_a) {
+var Pip = styled.div(templateObject_2$n || (templateObject_2$n = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.failure;
 });
@@ -4225,10 +4356,10 @@ var Avatar = function (_a) {
         React.createElement(Link$1, { to: link, "aria-label": ariaLabel }, icon),
         showPip && React.createElement(Pip, null)));
 };
-var templateObject_1$Y, templateObject_2$o;
+var templateObject_1$Y, templateObject_2$n;
 
 var Wrapper$3 = styled.div(templateObject_1$Z || (templateObject_1$Z = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
-var StyledNav = styled.nav(templateObject_2$p || (templateObject_2$p = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {
+var StyledNav = styled.nav(templateObject_2$o || (templateObject_2$o = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? 0 : "-" + MENU_HEIGHT + "px");
 }, MENU_HEIGHT, function (_a) {
@@ -4302,7 +4433,7 @@ var Menu = function (_a) {
             React.createElement(Inner$1, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$Z, templateObject_2$p, templateObject_3$b, templateObject_4$7, templateObject_5$4;
+var templateObject_1$Z, templateObject_2$o, templateObject_3$b, templateObject_4$7, templateObject_5$4;
 
 var types = {
     SUCCESS: "success",
